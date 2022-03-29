@@ -1,0 +1,8 @@
+#tabla{
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+
+#tabla div{
+    height: auto;
+}
