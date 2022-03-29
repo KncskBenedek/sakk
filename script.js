@@ -26,15 +26,24 @@ function kirajzol(){
 
 function kiszinez(){
     var divek = $("#tabla div");
-    for (let sor = 1; sor < divek.length; index+=16) {
-            var db = 0;
+    for (let sor = 1; sor < divek.length; sor+=16) {
+        var db = 0;
         for (let index = sor; db < 4; index+=2) {
             db++;
             divek[index].style.backgroundColor = "black";
             //divek[index].addEventListener("click", beFigura);
         }
+
     }
-    
+    for (let kezd = 8; kezd< divek.length; kezd+=16) {
+        var db = 0;
+        for (let index = kezd; db < 4; index+=2) {
+            db++;
+            divek[index].style.backgroundColor = "black";
+            //divek[index].addEventListener("click", beFigura);
+        }   
+        
+    }    
 }
 
 //function beFigura(){}
